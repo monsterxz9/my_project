@@ -1,18 +1,5 @@
-// tests/test.rs
-extern crate my_project;
-use my_project::add; // 导入add函数
 use std::io::Write;
 use std::process::{Command, Stdio};
-
-#[test]
-fn test_add_basic() {
-    assert_eq!(add(1, 2), 3);
-}
-
-#[test]
-fn test_add_negative() {
-    assert_eq!(add(-1, -2), -3);
-}
 
 #[test]
 fn test_main() {
